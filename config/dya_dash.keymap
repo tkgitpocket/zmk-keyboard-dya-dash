@@ -190,7 +190,6 @@
             bindings = <&mkp MCLK>;
             key-positions = <6 8 7>;
         };
-
     };
 
     keymap {
@@ -222,7 +221,7 @@
 
             bindings = <
 &kp TAB           &kp Q             &kp W          &kp E                  &kp R         &kp T                    &kp Y              &kp U                   &kp I     &kp O                   &kp P               &kp JP_TILDE
-&kp LCTRL         &kp A             &kp S          &kp D                  &kp F         &kp G                    &mt RIGHT_SHIFT H  &jenter                 &kp K     &mt RCTRL L             &lt SCROLL_L MINUS  &kp ENTER
+&kp LCTRL         &kp A             &kp S          &kp D                  &kp F         &kp G                    &kp H              &jenter                 &kp K     &mt RCTRL L             &lt SCROLL_L MINUS  &kp ENTER
 &kp LSHIFT        &kp Z             &kp X          &kp C                  &kp V         &kp B                    &kp B              &kp N                   &kp M     &kp COMMA               &kp DOT             &kp SLASH
                   &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt 11 SPACE  &lt LEFT_L INT_MUHENKAN  &kp BACKSPACE      &kp ENTER               &kp RALT  &mt RIGHT_SHIFT JP_YEN
 &out OUT_TOG      &out_bt_nxt                                                                                    &kp UP             &mt RIGHT_SHIFT JP_YEN  &kp DOWN  &kp RIGHT
