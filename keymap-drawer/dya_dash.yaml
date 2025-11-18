@@ -12,19 +12,19 @@ layers:
   - I
   - O
   - P
-  - '['
+  - '~'
   - LCTRL
   - A
   - S
   - D
   - F
   - G
-  - {t: H, s: BACKSPACE}
+  - {t: H, h: RIGHT SHIFT}
   - {t: J, s: ENTER}
   - K
   - {t: L, h: RCTRL}
   - {t: '-', h: Trackball Scroll}
-  - ''''
+  - ENTER
   - LSHIFT
   - Z
   - X
@@ -40,7 +40,7 @@ layers:
   - {t: ESC, h: Config Layer}
   - {t: LWIN, h: LALT}
   - {t: INT HENKAN, h: Left SPACE}
-  - SPACE
+  - {t: SPACE, h: Center SPACE}
   - {t: INT MUHENKAN, h: Left SPACE}
   - BACKSPACE
   - ENTER
@@ -99,9 +99,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: LANG2, h: LALT}
+  - {t: INT HENKAN, h: LALT}
   - {t: ▽, type: trans}
-  - {t: LANG2, h: Left SPACE}
+  - {t: INT MUHENKAN, h: Left SPACE}
   - {t: LANG1, h: Right SPACE}
   - {t: ▽, type: trans}
   - {t: LANG1, h: RALT}
@@ -303,13 +303,13 @@ layers:
   Left SPACE:
   - ESC
   - '!'
-  - '@'
+  - '"'
   - '#'
   - $
   - '%'
-  - ^
   - '&'
-  - '*'
+  - ''''
+  - (
   - (
   - )
   - ']'
@@ -323,7 +323,7 @@ layers:
   - '7'
   - '8'
   - '9'
-  - '0'
+  - '='
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -332,11 +332,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '`'
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - RSHIFT
+  - ;
+  - ':'
+  - <
+  - '>'
+  - '~'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -362,40 +362,40 @@ layers:
   - {t: ▽, type: trans}
   Right SPACE:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG UP
-  - ↑
-  - PG DN
-  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - AL LOCK
   - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - _
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ←
-  - ↓
-  - →
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - MUTE
-  - VOL DN
-  - VOL UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '`'
+  - +
+  - '*'
+  - ','
+  - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -664,6 +664,66 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Center SPACE:
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - AL LOCK
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - _
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - +
+  - '*'
+  - ','
+  - .
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
