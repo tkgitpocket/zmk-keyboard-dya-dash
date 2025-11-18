@@ -19,7 +19,7 @@ layers:
   - D
   - F
   - G
-  - {t: H, h: RIGHT SHIFT}
+  - H
   - {t: J, s: ENTER}
   - K
   - {t: L, h: RCTRL}
@@ -31,7 +31,7 @@ layers:
   - C
   - V
   - B
-  - B
+  - +
   - N
   - M
   - ','
@@ -697,12 +697,12 @@ layers:
   - Ctl+C
   - Ctl+V
   - LEFT ARROW
+  - PAGE DOWN
   - DOWN ARROW
   - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp RCLK'
   - ENTER
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
