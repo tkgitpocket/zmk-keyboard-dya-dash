@@ -191,27 +191,6 @@
             key-positions = <6 8 7>;
         };
 
-        long_hold_mod_tap: long_hold_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LONG_HOLD_MOD_TAP";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            quick-tap-ms = <0>;
-            require-prior-idle-ms = <0>;
-            flavor = "tap-preferred";
-        };
-
-        medium_hold_mod_tap: medium_hold_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MEDIUM_HOLD_MOD_TAP";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "balanced";
-        };
     };
 
     keymap {
@@ -242,7 +221,7 @@
             // | touch1  | touch2  | touch3  | touch 4 |                                   | touch1   | touch2       | touch3  | touch 4 |
 
             bindings = <
-&kp TAB           &kp Q             &kp W          &kp E                  &kp R         &kp T                    &kp Y              &kp U                   &kp I     &kp O                   &kp P               &kp TILDE
+&kp TAB           &kp Q             &kp W          &kp E                  &kp R         &kp T                    &kp Y              &kp U                   &kp I     &kp O                   &kp P               &kp JP_TILDE
 &kp LCTRL         &kp A             &kp S          &kp D                  &kp F         &kp G                    &mt RIGHT_SHIFT H  &jenter                 &kp K     &mt RCTRL L             &lt SCROLL_L MINUS  &kp ENTER
 &kp LSHIFT        &kp Z             &kp X          &kp C                  &kp V         &kp B                    &kp B              &kp N                   &kp M     &kp COMMA               &kp DOT             &kp SLASH
                   &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt 11 SPACE  &lt LEFT_L INT_MUHENKAN  &kp BACKSPACE      &kp ENTER               &kp RALT  &mt RIGHT_SHIFT JP_YEN
@@ -313,7 +292,7 @@
 &trans              &kp LCTRL           &kp SEMICOLON  &kp COLON       &kp JP_LBRACE  &kp JP_RBRACE                       &kp N6            &kp N7            &kp N8            &kp N9           &kp EQUAL          &kp BACKSLASH
 &mt LEFT_SHIFT TAB  &mt LEFT_SHIFT TAB  &kp JP_PLUS    &kp JP_ASTERISK &kp JP_TILDE   &kp PRINTSCREEN                     &kp JP_PLUS       &kp SEMICOLON     &kp JP_COLON      &kp LESS_THAN    &kp GREATER_THAN   &kp JP_TILDE
                     &trans              &trans         &trans          &trans         &trans                              &trans            &trans            &trans            &trans
-&trans              &trans                                                                                                &trans            &kp QUESTION            &trans            &trans
+&trans              &trans                                                                                                &trans            &kp QUESTION      &trans            &trans
 &trans              &trans              &trans         &trans                                                             &trans            &trans            &trans            &trans
             >;
         };
@@ -382,10 +361,10 @@
             display-name = "Center SPACE";
             bindings = <
 &trans         &kp TAB        &kp LEFT_ALT  &kp END       &kp SPACE       &trans                &kp RC(Y)       &mkp MB4   &mkp MB3   &mkp MB5   &kp UP_ARROW    &kp C_AL_LOCK
-&trans         &kp HOME       &kp LC(S)     &kp DEL       &kp RIGHT_ARROW &kp LEFT_SHIFT        &kp BACKSPACE   &mkp LCLK  &mkp LCLK  &mkp RCLK  &mo 11          &trans
-&kp LEFT_SHIFT &kp LC(Z)      &kp LC(X)     &kp LC(C)     &kp LC(V)       &kp LEFT_ARROW        &kp DOWN_ARROW  &trans     &mkp LCLK  &mkp RCLK  &kp ENTER      &trans
+&trans         &kp HOME       &kp LC(S)     &kp DEL       &kp RIGHT_ARROW &kp LEFT_SHIFT        &kp BACKSPACE   &mkp LCLK  &mkp LCLK  &mkp RCLK  &mo SCROLL_L    &trans
+&kp LEFT_SHIFT &kp LC(Z)      &kp LC(X)     &kp LC(C)     &kp LC(V)       &kp LEFT_ARROW        &kp DOWN_ARROW  &trans     &mkp LCLK  &mkp RCLK  &kp ENTER       &trans
                &trans         &trans        &trans        &trans          &trans                &trans        &trans        &trans        &trans
-&trans         &trans                                                                          &trans        &trans        &trans        &trans
+&trans         &trans                                                                           &trans        &trans        &trans        &trans
 &trans         &trans         &trans        &trans                                              &none         &none         &trans        &trans
             >;
         };
