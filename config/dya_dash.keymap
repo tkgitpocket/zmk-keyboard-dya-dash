@@ -220,12 +220,12 @@
             // | touch1  | touch2  | touch3  | touch 4 |                                   | touch1   | touch2       | touch3  | touch 4 |
 
             bindings = <
-&kp TAB           &kp Q             &kp W          &kp E                  &kp R         &kp T                    &kp Y              &kp U                   &kp I     &kp O                   &kp P               &kp JP_TILDE
-&kp LCTRL         &kp A             &kp S          &kp D                  &kp F         &kp G                    &kp H              &jenter                 &kp K     &mt RCTRL L             &lt SCROLL_L MINUS  &kp ENTER
-&kp LSHIFT        &kp Z             &kp X          &kp C                  &kp V         &kp B                    &kp JP_TILDE       &kp N                   &kp M     &kp COMMA               &kp DOT             &kp SLASH
-                  &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt 11 SPACE  &lt LEFT_L INT_MUHENKAN  &kp BACKSPACE      &kp ENTER               &kp RALT  &mt RIGHT_SHIFT JP_YEN
-&out OUT_TOG      &out_bt_nxt                                                                                    &kp UP             &mt RIGHT_SHIFT JP_YEN  &kp DOWN  &kp RIGHT
-&mo TRACKBALL_L2  &mo SCROLL_L      &none          &none                                                         &mo SCROLL_L       &mo TRACKBALL_L2        &none     &none
+&kp TAB           &kp Q             &kp W          &kp E                  &kp R         &kp T               &kp Y          &kp U                   &kp I     &kp O                   &kp P               &kp JP_TILDE
+&kp LCTRL         &kp A             &kp S          &kp D                  &kp F         &kp G               &kp H          &jenter                 &kp K     &mt RCTRL L             &lt SCROLL_L MINUS  &kp ENTER
+&kp LSHIFT        &kp Z             &kp X          &kp C                  &kp V         &kp B               &kp JP_TILDE   &kp N                   &kp M     &kp COMMA               &kp DOT             &kp SLASH
+                  &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt 11 SPACE  &lt 6 INT_MUHENKAN  &kp BACKSPACE  &kp ENTER               &kp RALT  &mt RIGHT_SHIFT JP_YEN
+&out OUT_TOG      &out_bt_nxt                                                                               &kp UP         &mt RIGHT_SHIFT JP_YEN  &kp DOWN  &kp RIGHT
+&mo TRACKBALL_L2  &mo SCROLL_L      &none          &none                                                    &mo SCROLL_L   &mo TRACKBALL_L2        &none     &none
             >;
         };
 
@@ -287,12 +287,12 @@
             //           |     |     |          |     |          |                           |     |         |         |     |
 
             bindings = <
-&kp ESC             &kp EXCLAMATION     &kp JP_DQUOTE  &kp HASH         &kp DOLLAR     &kp PERCENT      &kp JP_AMPERSAND  &kp JP_QUOTE   &kp JP_LPAREN  &kp JP_RPAREN  &kp JP_PIPE       &kp RBKT
-&trans              &kp LCTRL           &kp SEMICOLON  &kp COLON        &kp JP_LBRACE  &kp JP_RBRACE    &kp N6            &kp N7         &kp N8         &kp N9         &kp EQUAL         &kp BACKSLASH
-&mt LEFT_SHIFT TAB  &mt LEFT_SHIFT TAB  &kp JP_PLUS    &kp JP_ASTERISK  &kp JP_TILDE   &kp PRINTSCREEN  &kp JP_PLUS       &kp SEMICOLON  &kp JP_COLON   &kp LESS_THAN  &kp GREATER_THAN  &kp JP_TILDE
-                    &trans              &trans         &trans           &trans         &trans           &trans            &trans         &trans         &trans
-&trans              &trans                                                                              &trans            &kp QUESTION   &trans         &trans
-&trans              &trans              &trans         &trans                                           &trans            &trans         &trans         &trans
+&trans  &kp EXCLAMATION     &kp JP_DQUOTE  &kp HASH         &kp DOLLAR     &kp PERCENT      &kp JP_AMPERSAND  &kp JP_QUOTE   &kp JP_LPAREN  &kp JP_RPAREN  &kp JP_PIPE       &kp RBKT
+&trans  &kp LCTRL           &kp SEMICOLON  &kp COLON        &kp JP_LBRACE  &kp JP_RBRACE    &kp N6            &kp N7         &kp N8         &kp N9         &kp EQUAL         &kp BACKSLASH
+&trans  &mt LEFT_SHIFT TAB  &kp JP_PLUS    &kp JP_ASTERISK  &kp JP_TILDE   &kp PRINTSCREEN  &kp JP_PLUS       &kp SEMICOLON  &kp JP_COLON   &kp LESS_THAN  &kp GREATER_THAN  &kp JP_TILDE
+        &trans              &trans         &trans           &trans         &trans           &trans            &trans         &trans         &trans
+&trans  &trans                                                                              &trans            &kp QUESTION   &trans         &trans
+&trans  &trans              &trans         &trans                                           &trans            &trans         &trans         &trans
             >;
         };
 
@@ -359,12 +359,12 @@
         extra1 {
             display-name = "Center SPACE";
             bindings = <
-&trans         &kp TAB        &kp LEFT_ALT  &kp END       &kp SPACE       &trans                &kp RC(Y)       &mkp MB4   &mkp MB3   &mkp MB5   &kp UP_ARROW    &kp C_AL_LOCK
-&trans         &kp HOME       &kp LC(S)     &kp DEL       &kp RIGHT_ARROW &kp LEFT_SHIFT        &kp BACKSPACE   &mkp LCLK  &mkp LCLK  &mkp RCLK  &mo SCROLL_L    &trans
-&kp LEFT_SHIFT &kp LC(Z)      &kp LC(X)     &kp LC(C)     &kp LC(V)       &kp LEFT_ARROW        &kp PAGE_DOWN   &kp DOWN_ARROW  &trans     &mkp LCLK  &mkp RCLK  &kp ENTER
-               &trans         &trans        &trans        &trans          &trans                &trans        &trans        &trans        &trans
-&trans         &trans                                                                           &trans        &trans        &trans        &trans
-&trans         &trans         &trans        &trans                                              &none         &none         &trans        &trans
+&trans          &kp TAB    &kp LEFT_ALT  &kp END    &kp SPACE        &trans          &kp RC(Y)      &mkp MB4        &mkp MB3   &mkp MB5   &kp UP_ARROW  &kp C_AL_LOCK
+&trans          &kp HOME   &kp LC(S)     &kp DEL    &kp RIGHT_ARROW  &kp LEFT_SHIFT  &kp BACKSPACE  &mkp LCLK       &mkp LCLK  &mkp RCLK  &mo SCROLL_L  &trans
+&kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)        &kp LEFT_ARROW  &kp PAGE_DOWN  &kp DOWN_ARROW  &trans     &mkp LCLK  &mkp RCLK     &kp ENTER
+                &trans     &trans        &trans     &trans           &trans          &trans         &trans          &trans     &trans
+&trans          &trans                                                               &trans         &trans          &trans     &trans
+&trans          &trans     &trans        &trans                                      &none          &none           &trans     &trans
             >;
         };
 
