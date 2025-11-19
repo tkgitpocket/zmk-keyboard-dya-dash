@@ -221,8 +221,8 @@
 
             bindings = <
 &kp TAB           &kp Q             &kp W          &kp E                  &kp R         &kp T               &kp Y          &kp U                   &kp I     &kp O                   &kp P               &kp JP_TILDE
-&kp LCTRL         &kp A             &kp S          &kp D                  &kp F         &kp G               &kp H          &jenter                 &kp K     &mt RCTRL L             &lt SCROLL_L MINUS  &kp ENTER
-&kp LSHIFT        &kp Z             &kp X          &kp C                  &kp V         &kp B               &kp JP_TILDE   &kp N                   &kp M     &kp COMMA               &kp DOT             &kp SLASH
+&kp LCTRL         &kp A             &kp S          &kp D                  &kp F         &kp G               &kp H          &jenter                 &kp K     &mt RCTRL L             &lt SCROLL_L MINUS  &lt SCROLL_L ENTER
+&kp LSHIFT        &kp Z             &kp X          &kp C                  &kp V         &kp B               &kp JP_TILDE   &kp N                   &kp M     &mkp LCLK               &mkp RCLK           &kp SLASH
                   &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt 11 SPACE  &lt 6 INT_MUHENKAN  &kp BACKSPACE  &kp ENTER               &kp RALT  &mt RIGHT_SHIFT JP_YEN
 &out OUT_TOG      &out_bt_nxt                                                                               &kp UP         &mt RIGHT_SHIFT JP_YEN  &kp DOWN  &kp RIGHT
 &mo TRACKBALL_L2  &mo SCROLL_L      &none          &none                                                    &mo SCROLL_L   &mo TRACKBALL_L2        &none     &none
@@ -235,7 +235,7 @@
 &trans  &trans  &trans  &trans               &trans  &trans                   &trans             &trans  &trans          &trans  &trans  &trans
 &trans  &trans  &trans  &trans               &trans  &trans                   &trans             &trans  &trans          &trans  &trans  &trans
 &trans  &trans  &trans  &trans               &trans  &trans                   &trans             &trans  &trans          &trans  &trans  &trans
-        &trans  &trans  &mt LALT INT_HENKAN  &trans  &lt LEFT_L INT_MUHENKAN  &lt RIGHT_L LANG1  &trans  &mt RALT LANG1  &trans
+        &trans  &trans  &mt LALT INT_HENKAN  &trans  &lt LEFT_L INT_MUHENKAN  &trans             &trans  &trans          &trans
 &trans  &trans                                                                &trans             &trans  &trans          &trans
 &trans  &trans  &trans  &trans                                                &trans             &trans  &trans          &trans
             >;
@@ -287,12 +287,12 @@
             //           |     |     |          |     |          |                           |     |         |         |     |
 
             bindings = <
-&trans  &kp EXCLAMATION     &kp JP_DQUOTE  &kp HASH         &kp DOLLAR     &kp PERCENT      &kp JP_AMPERSAND  &kp JP_QUOTE   &kp JP_LPAREN  &kp JP_RPAREN  &kp JP_PIPE       &kp RBKT
-&trans  &kp LCTRL           &kp SEMICOLON  &kp COLON        &kp JP_LBRACE  &kp JP_RBRACE    &kp N6            &kp N7         &kp N8         &kp N9         &kp EQUAL         &kp BACKSLASH
-&trans  &mt LEFT_SHIFT TAB  &kp JP_PLUS    &kp JP_ASTERISK  &kp JP_TILDE   &kp PRINTSCREEN  &kp JP_PLUS       &kp SEMICOLON  &kp JP_COLON   &kp LESS_THAN  &kp GREATER_THAN  &kp JP_TILDE
-        &trans              &trans         &trans           &trans         &trans           &trans            &trans         &trans         &trans
-&trans  &trans                                                                              &trans            &kp QUESTION   &trans         &trans
-&trans  &trans              &trans         &trans                                           &trans            &trans         &trans         &trans
+&trans  &kp EXCLAMATION     &kp JP_DQUOTE  &kp HASH         &kp DOLLAR     &kp PERCENT      &kp JP_AMPERSAND  &kp JP_QUOTE   &kp JP_LPAREN   &kp JP_RPAREN    &kp JP_PIPE       &kp RBKT
+&trans  &kp LCTRL           &kp SEMICOLON  &kp COLON        &kp JP_LBRACE  &kp JP_RBRACE    &kp JP_CARET      &kp JP_AT      &kp JP_LBRACKET &kp JP_RBRACKET  &kp JP_EQUAL      &kp BACKSLASH
+&trans  &mt LEFT_SHIFT TAB  &kp JP_PLUS    &kp JP_ASTERISK  &kp JP_TILDE   &kp PRINTSCREEN  &kp JP_PLUS       &kp SEMICOLON  &kp JP_COLON    &kp LESS_THAN    &kp GREATER_THAN  &kp JP_TILDE
+        &trans              &trans         &trans           &trans         &trans           &trans            &trans         &trans          &trans
+&trans  &trans                                                                              &trans            &kp QUESTION   &trans          &trans
+&trans  &trans              &trans         &trans                                           &trans            &trans         &trans          &trans
             >;
         };
 
