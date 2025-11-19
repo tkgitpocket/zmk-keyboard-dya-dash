@@ -555,12 +555,9 @@ path.combo {
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(217, 224)" class="key keypos-38">
-<rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">INT</tspan><tspan x="0" dy="1.2em">HENKAN</tspan>
-</text>
-<text x="0" y="24" class="key hold">LALT</text>
+<g transform="translate(217, 224)" class="key trans keypos-38">
+<rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(286, 230) rotate(10.0)" class="key trans keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -568,12 +565,8 @@ path.combo {
 </g>
 <g transform="translate(344, 246) rotate(20.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">INT</tspan><tspan x="0" dy="1.2em">MUHENKAN</tspan>
-</text>
-<a href="#Left-SPACE">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 80%">Left SPACE</tspan></text>
-</a></g>
+<text x="0" y="0" class="key tap">&amp;transt</text>
+</g>
 <g transform="translate(482, 246) rotate(-20.0)" class="key trans keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
