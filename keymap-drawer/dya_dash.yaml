@@ -41,7 +41,7 @@ layers:
   - {t: LWIN, h: LALT}
   - {t: INT HENKAN, h: Left SPACE}
   - {t: SPACE, h: Center SPACE}
-  - {t: INT MUHENKAN, h: Left SPACE}
+  - {t: INT MUHENKAN, h: Right SPACE}
   - BACKSPACE
   - ENTER
   - RALT
@@ -301,7 +301,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Left SPACE:
-  - ESC
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -325,7 +325,7 @@ layers:
   - '9'
   - '='
   - \
-  - {t: TAB, h: LEFT SHIFT}
+  - {t: ▽, type: trans}
   - {t: TAB, h: LEFT SHIFT}
   - ':'
   - '"'
@@ -401,8 +401,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
