@@ -24,7 +24,7 @@ layers:
   - K
   - {t: L, h: RCTRL}
   - {t: '-', h: Trackball Scroll}
-  - ENTER
+  - {t: ENTER, h: Trackball Scroll}
   - LSHIFT
   - Z
   - X
@@ -34,8 +34,8 @@ layers:
   - +
   - N
   - M
-  - ','
-  - .
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - /
   - {t: ESC, h: Config Layer}
   - {t: LWIN, h: LALT}
@@ -102,9 +102,9 @@ layers:
   - {t: INT HENKAN, h: LALT}
   - {t: ▽, type: trans}
   - {t: INT MUHENKAN, h: Left SPACE}
-  - {t: LANG1, h: Right SPACE}
   - {t: ▽, type: trans}
-  - {t: LANG1, h: RALT}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -319,11 +319,11 @@ layers:
   - ':'
   - '}'
   - '|'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
   - '='
+  - '['
+  - ']'
+  - \
+  - _
   - \
   - {t: ▽, type: trans}
   - {t: TAB, h: LEFT SHIFT}
