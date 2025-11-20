@@ -140,7 +140,7 @@
             // layers = <9>;
             // 縦のスクロール方向をWindowsに合わせるために
             input-processors = <
-                &zip_xy_scaler 1 50 
+                &zip_xy_scaler 1 100 
                 &zip_xy_to_scroll_mapper
                 &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
             >;
