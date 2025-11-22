@@ -301,7 +301,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Left SPACE:
-  - {t: ▽, type: trans}
+  - '!'
   - '!'
   - '@'
   - '#'
@@ -361,7 +361,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Right SPACE:
-  - {t: ▽, type: trans}
+  - '1'
   - '1'
   - '2'
   - '3'
@@ -372,7 +372,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - AL LOCK
+  - '0'
   - {t: ▽, type: trans}
   - F1
   - F2
@@ -678,7 +678,7 @@ layers:
   - '&mkp MB3'
   - '&mkp MB5'
   - UP ARROW
-  - AL LOCK
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
   - Ctl+S
@@ -708,7 +708,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
