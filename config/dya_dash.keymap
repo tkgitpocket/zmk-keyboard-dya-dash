@@ -273,24 +273,24 @@
             //           |     |     |          |     |          |                           |     |         |         |     |
 
             bindings = <
-&trans  &kp EXCLAMATION     &kp JP_DQUOTE  &kp HASH         &kp DOLLAR     &kp PERCENT      &kp JP_AMPERSAND  &kp JP_QUOTE   &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE       &kp RBKT
-&trans  &kp LCTRL           &kp SEMICOLON  &kp COLON        &kp JP_LBRACE  &kp JP_RBRACE    &kp JP_CARET      &kp JP_AT      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_EQUAL      &kp BACKSLASH
-&trans  &mt LEFT_SHIFT TAB  &kp JP_PLUS    &kp JP_ASTERISK  &kp JP_TILDE   &kp PRINTSCREEN  &kp JP_PLUS       &kp SEMICOLON  &kp JP_COLON     &kp LESS_THAN    &kp GREATER_THAN  &kp JP_TILDE
-        &trans              &trans         &trans           &trans         &trans           &trans            &trans         &trans           &trans
-&trans  &trans                                                                              &trans            &kp QUESTION   &trans           &trans
-&trans  &trans              &trans         &trans                                           &trans            &trans         &trans           &trans
+&kp EXCL  &kp EXCLAMATION     &kp JP_DQUOTE  &kp HASH         &kp DOLLAR     &kp PERCENT      &kp JP_AMPERSAND  &kp JP_QUOTE   &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE       &kp RBKT
+&trans    &kp LCTRL           &kp SEMICOLON  &kp COLON        &kp JP_LBRACE  &kp JP_RBRACE    &kp JP_CARET      &kp JP_AT      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_EQUAL      &kp BACKSLASH
+&trans    &mt LEFT_SHIFT TAB  &kp JP_PLUS    &kp JP_ASTERISK  &kp JP_TILDE   &kp PRINTSCREEN  &kp JP_PLUS       &kp SEMICOLON  &kp JP_COLON     &kp LESS_THAN    &kp GREATER_THAN  &kp JP_TILDE
+          &trans              &trans         &trans           &trans         &trans           &trans            &trans         &trans           &trans
+&trans    &trans                                                                              &trans            &kp QUESTION   &trans           &trans
+&trans    &trans              &trans         &trans                                           &trans            &trans         &trans           &trans
             >;
         };
 
         right_layer {
             display-name = "Right SPACE";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0       &kp C_AL_LOCK
-&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &kp F7        &kp F8           &kp F9        &kp JP_UNDERSCORE  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &kp JP_BACKQUOTE  &kp JP_PLUS   &kp JP_ASTERISK  &kp COMMA     &kp PERIOD         &kp SLASH
-        &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans           &trans
-&trans  &trans                                                                &trans            &kp QUESTION  &trans           &trans
-&trans  &trans        &trans        &trans                                    &none             &none         &trans           &trans
+&kp NUMBER_1  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0       &kp N0
+&trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &kp F7        &kp F8           &kp F9        &kp JP_UNDERSCORE  &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &kp JP_BACKQUOTE  &kp JP_PLUS   &kp JP_ASTERISK  &kp COMMA     &kp PERIOD         &kp SLASH
+              &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans           &trans
+&trans        &trans                                                                &trans            &kp QUESTION  &trans           &trans
+&trans        &trans        &trans        &trans                                    &none             &none         &trans           &trans
             >;
         };
 
@@ -345,10 +345,10 @@
         extra1 {
             display-name = "Center SPACE";
             bindings = <
-&trans          &kp TAB    &kp LEFT_ALT  &kp END    &kp SPACE        &trans          &kp RC(Y)      &mkp MB4        &mkp MB3   &mkp MB5   &kp UP_ARROW  &kp C_AL_LOCK
+&trans          &kp TAB    &kp LEFT_ALT  &kp END    &kp SPACE        &trans          &kp RC(Y)      &mkp MB4        &mkp MB3   &mkp MB5   &kp UP_ARROW  &trans
 &trans          &kp HOME   &kp LC(S)     &kp DEL    &kp RIGHT_ARROW  &kp LEFT_SHIFT  &kp BACKSPACE  &mkp LCLK       &mkp LCLK  &mkp RCLK  &mo SCROLL_L  &trans
 &kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)        &kp LEFT_ARROW  &kp PAGE_DOWN  &kp DOWN_ARROW  &trans     &mkp LCLK  &mkp RCLK     &kp ENTER
-                &trans     &trans        &trans     &trans           &trans          &trans         &trans          &trans     &trans
+                &trans     &trans        &trans     &trans           &trans          &kp RCTRL      &trans          &trans     &trans
 &trans          &trans                                                               &trans         &trans          &trans     &trans
 &trans          &trans     &trans        &trans                                      &none          &none           &trans     &trans
             >;
