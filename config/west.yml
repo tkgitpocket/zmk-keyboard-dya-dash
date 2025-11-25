@@ -6,6 +6,8 @@ manifest:
   remotes:
     - name: cormoran
       url-base: https://github.com/cormoran
+    - name: kot149
+      url-base: https://github.com/kot149
   projects:
     - name: zmk
       import:
@@ -24,5 +26,8 @@ manifest:
     - name: zmk-driver-ext-power-transient
       path: external/zmk-driver-ext-power-transient
       clone-depth: 1
+    - name: zmk-scroll-snap
+      remote: kot149
+      revision: v1
   self:
     path: config
