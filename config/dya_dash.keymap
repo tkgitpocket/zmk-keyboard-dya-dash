@@ -167,30 +167,35 @@
             bindings = <&kp COMMA>;
             key-positions = <31 32>;
             timeout-ms = <30>;
+            require-prior-idle-ms = <20>;
         };
 
         dot {
             bindings = <&kp DOT>;
             key-positions = <32 33>;
             timeout-ms = <30>;
+            require-prior-idle-ms = <20>;
         };
 
         asterisk {
             bindings = <&kp JP_ASTERISK>;
             key-positions = <18 19>;
             timeout-ms = <30>;
+            require-prior-idle-ms = <20>;
         };
 
         plus {
             bindings = <&kp JP_PLUS>;
             key-positions = <30 31>;
             timeout-ms = <30>;
+            require-prior-idle-ms = <20>;
         };
 
         mb3 {
             bindings = <&mkp MCLK>;
             key-positions = <7 8 9>;
             timeout-ms = <30>;
+            require-prior-idle-ms = <20>;
         };
 
         mb4 {
@@ -203,22 +208,28 @@
             bindings = <&mkp MB5>;
             key-positions = <8 9>;
             timeout-ms = <30>;
+            require-prior-idle-ms = <20>;
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <19 20>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <20>;
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <20 21>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <20>;
         };
 
         shift_tab {
             bindings = <&kt LS(TAB)>;
             key-positions = <15 16>;
             timeout-ms = <30>;
+            require-prior-idle-ms = <20>;
         };
     };
 
