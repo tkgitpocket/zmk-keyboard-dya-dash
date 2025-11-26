@@ -5,12 +5,12 @@
 #include <dt-bindings/zmk_driver_animation/animation_control.h>
 #include <dt-bindings/zmk_driver_animation/animation_trigger.h>
 #include <dt-bindings/zmk_behavior_default_layer/default_layer.h>
+#include <scroll-snap.dtsi> // スクロールスナップ用
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <scroll-snap.dtsi> // スクロールスナップ用
 
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
@@ -69,6 +69,7 @@
     layers = <SCROLL_L>;
 
     // Example: adjust sensitivity of scroll multiply by 1 and divide by 60.
+
     input-processors = <
         &zip_xy_scaler 1 20
         &zip_xy_to_scroll_mapper
@@ -84,6 +85,7 @@
 &zip_temp_layer { excluded-positions = <19 20 21 22 32 33 41 52 53 54 55 56 57 58 59>; };
 
 &trackball_r { cpi = <600>; };
+
 //&trackball_r { cpi = <800>; };
 
 &trackball_l { cpi = <600>; };
@@ -108,6 +110,18 @@
             bindings = <&kp J>, <&kp ENTER>;
 
             mods = <(MOD_LCTL)>;
+        };
+
+        long_hold_mod_tap: long_hold_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LONG_HOLD_MOD_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            quick-tap-ms = <0>;
+            require-prior-idle-ms = <0>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -152,28 +166,60 @@
         comma {
             bindings = <&kp COMMA>;
             key-positions = <31 32>;
+            timeout-ms = <30>;
         };
 
         dot {
             bindings = <&kp DOT>;
             key-positions = <32 33>;
+            timeout-ms = <30>;
         };
 
         asterisk {
             bindings = <&kp JP_ASTERISK>;
             key-positions = <18 19>;
+            timeout-ms = <30>;
         };
 
         plus {
             bindings = <&kp JP_PLUS>;
             key-positions = <30 31>;
+            timeout-ms = <30>;
         };
 
         mb3 {
             bindings = <&mkp MCLK>;
-            key-positions = <19 20 21>;
+            key-positions = <7 8 9>;
+            timeout-ms = <30>;
         };
 
+        mb4 {
+            bindings = <&mkp MB4>;
+            key-positions = <7 8>;
+            timeout-ms = <30>;
+        };
+
+        mb5 {
+            bindings = <&mkp MB5>;
+            key-positions = <8 9>;
+            timeout-ms = <30>;
+        };
+
+        semicolon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <19 20>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <20 21>;
+        };
+
+        shift_tab {
+            bindings = <&kt LS(TAB)>;
+            key-positions = <15 16>;
+            timeout-ms = <30>;
+        };
     };
 
     keymap {
@@ -204,9 +250,9 @@
             // | touch1  | touch2  | touch3  | touch 4 |                                   | touch1   | touch2       | touch3  | touch 4 |
 
             bindings = <
-&kp TAB           &kp Q             &kp W          &kp E                  &kp R             &kp T                     &kp Y          &kp U                   &kp I     &kp O                   &kp P               &kp JP_TILDE
-&kp LCTRL         &kp A             &kp S          &kp D                  &kp F             &kp G                     &kp H          &jenter                 &kp K     &mt RCTRL L             &lt SCROLL_L MINUS  &lt SCROLL_L ENTER
-&kp LSHIFT        &kp Z             &kp X          &kp C                  &kp V             &kp B                     &kp JP_TILDE   &kp N                   &kp M     &mkp LCLK               &mkp RCLK           &kp SLASH
+&kp TAB           &kp Q             &kp W          &kp E                  &kp R             &kp T                     &kp Y          &kp U                   &kp I     &kp O                       &kp P               &kp JP_TILDE
+&kp LCTRL         &kp A             &kp S          &kp D                  &kp F             &kp G                     &kp H          &jenter                 &kp K     &long_hold_mod_tap RCTRL L  &lt SCROLL_L MINUS  &lt SCROLL_L ENTER
+&kp LSHIFT        &kp Z             &kp X          &kp C                  &kp V             &kp B                     &kp JP_TILDE   &kp N                   &kp M     &mkp LCLK                   &mkp RCLK           &kp SLASH
                   &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt EXT1_L SPACE  &lt RIGHT_L INT_MUHENKAN  &kp BACKSPACE  &kp ENTER               &kp RALT  &mt RIGHT_SHIFT JP_YEN
 &out OUT_TOG      &out_bt_nxt                                                                                         &kp UP         &mt RIGHT_SHIFT JP_YEN  &kp DOWN  &kp RIGHT
 &mo TRACKBALL_L2  &mo SCROLL_L      &none          &none                                                              &mo SCROLL_L   &mo TRACKBALL_L2        &none     &none
