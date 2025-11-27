@@ -342,8 +342,8 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LCTRL
+  - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -678,7 +678,7 @@ layers:
   - '&mkp MB3'
   - '&mkp MB5'
   - UP ARROW
-  - {t: ▽, type: trans}
+  - PAGE UP
   - {t: ▽, type: trans}
   - HOME
   - Ctl+S
@@ -690,7 +690,7 @@ layers:
   - '&mkp LCLK'
   - '&mkp RCLK'
   - Trackball Scroll
-  - {t: ▽, type: trans}
+  - PAGE DOWN
   - LEFT SHIFT
   - Ctl+Z
   - Ctl+X
