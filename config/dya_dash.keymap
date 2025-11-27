@@ -136,6 +136,42 @@
             bindings = <&out OUT_BLE &bt BT_NXT &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
         };
 
+        // Select specific BT device (0-4) and disconnect others
+        out_bt_0: out_bt_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <50>;
+            bindings = <&out OUT_BLE &bt BT_SEL 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+        };
+
+        out_bt_1: out_bt_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <50>;
+            bindings = <&out OUT_BLE &bt BT_SEL 1 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+        };
+
+        out_bt_2: out_bt_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <50>;
+            bindings = <&out OUT_BLE &bt BT_SEL 2 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>;
+        };
+
+        out_bt_3: out_bt_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <50>;
+            bindings = <&out OUT_BLE &bt BT_SEL 3 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 4>;
+        };
+
+        out_bt_4: out_bt_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <50>;
+            bindings = <&out OUT_BLE &bt BT_SEL 4 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3>;
+        };
+
         // Change default layer for current profile to next layer
 
         dfnxt: dfnxt {
@@ -219,7 +255,7 @@
         };
 
         colon {
-            bindings = <&kp COLON>;
+            bindings = <&kp JP_COLON>;
             key-positions = <20 21>;
             timeout-ms = <30>;
             require-prior-idle-ms = <20>;
@@ -400,7 +436,7 @@
         extra1 {
             display-name = "Center SPACE";
             bindings = <
-&trans          &kp TAB    &kp LEFT_ALT  &kp END    &kp SPACE        &trans          &kp RC(Y)      &mkp MB4        &mkp MB3   &mkp MB5   &kp UP_ARROW  &kp PAGE_UP
+&trans          &kp TAB    &kp LEFT_ALT  &kp END    &lt EXT1_2 SPACE &trans          &kp RC(Y)      &mkp MB4        &mkp MB3   &mkp MB5   &kp UP_ARROW  &kp PAGE_UP
 &trans          &kp HOME   &kp LC(S)     &kp DEL    &kp RIGHT_ARROW  &kp LEFT_SHIFT  &kp BACKSPACE  &mkp LCLK       &mkp LCLK  &mkp RCLK  &mo SCROLL_L  &kp PAGE_DOWN
 &kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)        &kp LEFT_ARROW  &kp PAGE_DOWN  &kp DOWN_ARROW  &trans     &mkp LCLK  &mkp RCLK     &kp ENTER
                 &trans     &trans        &trans     &trans           &trans          &kp RCTRL      &trans          &trans     &trans
@@ -409,7 +445,17 @@
             >;
         };
 
-        extra2 { status = "reserved"; };
+        extra2 {
+            display-name = "Bluetooth";
+            bindings = <
+                &trans      &trans      &trans      &trans      &trans      &trans      /**/ &out_bt_0   &out_bt_1   &out_bt_2   &out_bt_3   &out_bt_4   &trans
+                &trans      &trans      &trans      &trans      &trans      &trans      /**/ &trans      &trans      &trans      &trans      &trans      &trans
+                &trans      &trans      &trans      &trans      &trans      &trans      /**/ &trans      &trans      &trans      &trans      &trans      &trans
+                            &trans      &trans      &trans      &trans      &trans      /**/ &trans      &trans      &trans      &trans
+                         &trans      &trans                                                      /**/ &trans      &trans      &trans      &trans
+                &trans      &trans      &trans      &trans                              /**/ &trans      &trans      &trans      &trans
+            >;
+        };
 
         extra3 { status = "reserved"; };
     };
