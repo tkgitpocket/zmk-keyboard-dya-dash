@@ -52,8 +52,8 @@ layers:
   - {t: '0x89', h: RIGHT SHIFT}
   - ↓
   - →
-  - Trackball Manual
-  - Trackball Scroll
+  - ''
+  - ''
   - ''
   - ''
   - Trackball Scroll
@@ -598,12 +598,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Trackball Scroll:
