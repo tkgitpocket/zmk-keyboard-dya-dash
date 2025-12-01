@@ -24,7 +24,7 @@ layers:
   - K
   - {t: L, h: RCTRL}
   - {t: '-', h: Trackball Scroll}
-  - {t: ENTER, h: Trackball Scroll}
+  - {t: '-', h: Trackball Scroll}
   - LSHIFT
   - Z
   - X
@@ -374,7 +374,7 @@ layers:
   - '0'
   - '0'
   - {t: ▽, type: trans}
-  - F1
+  - ''
   - F2
   - F3
   - F4
@@ -672,7 +672,7 @@ layers:
   - LEFT ALT
   - END
   - {t: SPACE, h: Bluetooth}
-  - {t: ▽, type: trans}
+  - PRINTSCREEN
   - Ctl+Y
   - '&mkp MB4'
   - '&mkp MB3'

@@ -225,7 +225,7 @@ path.combo {
 </a></g>
 <g transform="translate(812, 112)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ENTER</text>
+<text x="0" y="0" class="key tap">-</text>
 <a href="#Trackball-Scroll">
 <text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 62%">Trackball Sc…</tspan></text>
 </a></g>
@@ -1674,7 +1674,6 @@ path.combo {
 </g>
 <g transform="translate(84, 112)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">F1</text>
 </g>
 <g transform="translate(140, 98)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -2849,9 +2848,9 @@ path.combo {
 <a href="#Bluetooth">
 <text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 89%">Bluetooth</tspan></text>
 </a></g>
-<g transform="translate(308, 28)" class="key trans keypos-5">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(308, 28)" class="key keypos-5">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 73%">PRINTSCREEN</tspan></text>
 </g>
 <g transform="translate(532, 28)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
