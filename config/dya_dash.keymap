@@ -90,6 +90,11 @@
 
 &trackball_l { cpi = <600>; };
 
+&lt {
+    tapping-term-ms = <350>;
+    flavor = "tap-preferred";
+};
+
 / {
     behaviors {
         // ctrl+h as backspace
@@ -137,6 +142,7 @@
         };
 
         // Select specific BT device (0-4) and disconnect others
+
         out_bt_0: out_bt_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -298,7 +304,7 @@
 
             bindings = <
 &kp TAB           &kp Q             &kp W          &kp E                  &kp R             &kp T                     &kp Y          &kp U                   &kp I     &kp O                       &kp P               &kp JP_TILDE
-&kp LCTRL         &kp A             &kp S          &kp D                  &kp F             &kp G                     &kp H          &jenter                 &kp K     &long_hold_mod_tap RCTRL L  &lt SCROLL_L MINUS  &lt SCROLL_L ENTER
+&kp LCTRL         &kp A             &kp S          &kp D                  &kp F             &kp G                     &kp H          &jenter                 &kp K     &long_hold_mod_tap RCTRL L  &lt SCROLL_L MINUS  &lt SCROLL_L MINUS
 &kp LSHIFT        &kp Z             &kp X          &kp C                  &kp V             &kp B                     &kp JP_TILDE   &kp N                   &kp M     &mkp LCLK                   &mkp RCLK           &kp SLASH
                   &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt EXT1_L SPACE  &lt RIGHT_L INT_MUHENKAN  &kp BACKSPACE  &kp ENTER               &kp RALT  &mt RIGHT_SHIFT JP_YEN
 &out OUT_TOG      &out_bt_nxt                                                                                         &kp UP         &mt RIGHT_SHIFT JP_YEN  &kp DOWN  &kp RIGHT
@@ -377,7 +383,7 @@
             display-name = "Right SPACE";
             bindings = <
 &kp NUMBER_1  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0       &kp N0
-&trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &kp F7        &kp F8           &kp F9        &kp JP_UNDERSCORE  &trans
+&trans        &none         &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &kp F7        &kp F8           &kp F9        &kp JP_UNDERSCORE  &trans
 &trans        &trans        &trans        &trans        &trans        &trans        &kp JP_BACKQUOTE  &kp JP_PLUS   &kp JP_ASTERISK  &kp COMMA     &kp PERIOD         &kp SLASH
               &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans           &trans
 &trans        &trans                                                                &trans            &kp QUESTION  &trans           &trans
@@ -436,24 +442,24 @@
         extra1 {
             display-name = "Center SPACE";
             bindings = <
-&trans          &kp TAB    &kp LEFT_ALT  &kp END    &lt EXT2_L SPACE &trans          &kp RC(Y)      &mkp MB4        &mkp MB3   &mkp MB5   &kp UP_ARROW  &kp PAGE_UP
-&trans          &kp HOME   &kp LC(S)     &kp DEL    &kp RIGHT_ARROW  &kp LEFT_SHIFT  &kp BACKSPACE  &mkp LCLK       &mkp LCLK  &mkp RCLK  &mo SCROLL_L  &kp PAGE_DOWN
-&kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)        &kp LEFT_ARROW  &kp PAGE_DOWN  &kp DOWN_ARROW  &trans     &mkp LCLK  &mkp RCLK     &kp ENTER
-                &trans     &trans        &trans     &trans           &trans          &kp RCTRL      &trans          &trans     &trans
-&trans          &trans                                                               &trans         &trans          &trans     &trans
-&trans          &trans     &trans        &trans                                      &none          &none           &trans     &trans
+&trans          &kp TAB    &kp LEFT_ALT  &kp END    &lt EXT2_L SPACE  &kp PRINTSCREEN  &kp RC(Y)      &mkp MB4        &mkp MB3   &mkp MB5   &kp UP_ARROW  &kp PAGE_UP
+&trans          &kp HOME   &kp LC(S)     &kp DEL    &kp RIGHT_ARROW   &kp LEFT_SHIFT   &kp BACKSPACE  &mkp LCLK       &mkp LCLK  &mkp RCLK  &mo SCROLL_L  &kp PAGE_DOWN
+&kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)         &kp LEFT_ARROW   &kp PAGE_DOWN  &kp DOWN_ARROW  &trans     &mkp LCLK  &mkp RCLK     &kp ENTER
+                &trans     &trans        &trans     &trans            &trans           &kp RCTRL      &trans          &trans     &trans
+&trans          &trans                                                                 &trans         &trans          &trans     &trans
+&trans          &trans     &trans        &trans                                        &none          &none           &trans     &trans
             >;
         };
 
         extra2 {
             display-name = "Bluetooth";
             bindings = <
-                &trans      &trans      &trans      &trans      &trans      &trans      /**/ &out_bt_0   &out_bt_1   &out_bt_2   &out_bt_3   &out_bt_4   &trans
-                &trans      &trans      &trans      &trans      &trans      &trans      /**/ &trans      &trans      &trans      &trans      &trans      &trans
-                &trans      &trans      &trans      &trans      &trans      &trans      /**/ &trans      &trans      &trans      &trans      &trans      &trans
-                            &trans      &trans      &trans      &trans      &trans      /**/ &trans      &trans      &trans      &trans
-                         &trans      &trans                                                      /**/ &trans      &trans      &trans      &trans
-                &trans      &trans      &trans      &trans                              /**/ &trans      &trans      &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &out_bt_0  &out_bt_1  &out_bt_2  &out_bt_3  &out_bt_4  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans     &trans     &trans
+        &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
+&trans  &trans                                  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans                  &trans     &trans     &trans     &trans
             >;
         };
 
