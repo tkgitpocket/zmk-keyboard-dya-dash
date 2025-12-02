@@ -308,7 +308,7 @@
 &kp LSHIFT    &kp Z             &kp X          &kp C                  &kp V             &kp B                     &kp JP_TILDE   &kp N                   &kp M     &mkp LCLK                   &mkp RCLK           &kp SLASH
               &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt EXT1_L SPACE  &lt RIGHT_L INT_MUHENKAN  &kp BACKSPACE  &kp ENTER               &kp RALT  &mt RIGHT_SHIFT JP_YEN
 &out OUT_TOG  &out_bt_nxt                                                                                         &kp UP         &mt RIGHT_SHIFT JP_YEN  &kp DOWN  &kp RIGHT
-&none         &none             &none          &none                                                              &mo SCROLL_L   &mo TRACKBALL_L2        &none     &none
+&none         &none             &none          &none                                                              &mo SCROLL_L   &none                   &none     &none
             >;
         };
 
@@ -327,24 +327,24 @@
         mac_default_layer {
             display-name = "Mac Default";
             bindings = <
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-        &trans  &kp LALT  &mt LCMD LANG2  &trans  &lt LEFT_L LANG2  &lt RIGHT_L LANG1  &trans  &mt RCMD LANG1  &kp RALT
-&trans  &trans                                                      &trans             &trans  &trans          &trans
-&trans  &trans  &trans    &trans                                    &trans             &trans  &trans          &trans
+&trans  &trans  &trans    &trans            &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans            &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans            &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &kp LALT  &lt 5 LANGUAGE_1  &trans  &lt 6 LANG2  &trans  &trans  &trans  &trans
+&trans  &trans                                                   &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans                                 &trans  &trans  &trans  &trans
             >;
         };
 
         ios_default_layer {
             display-name = "iOS Default";
             bindings = <
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-        &trans  &kp LALT  &mt LCMD LANG2  &trans  &lt LEFT_L LANG2  &lt RIGHT_L LANG1  &trans  &mt RCMD LANG1  &kp RALT
-&trans  &trans                                                      &trans             &trans  &trans          &trans
-&trans  &trans  &trans    &trans                                    &trans             &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                                  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans
             >;
         };
 
