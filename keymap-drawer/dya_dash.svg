@@ -226,9 +226,7 @@ path.combo {
 <g transform="translate(812, 112)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">-</text>
-<a href="#Trackball-Scroll">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 62%">Trackball Sc…</tspan></text>
-</a></g>
+</g>
 <g transform="translate(42, 168)" class="key keypos-24">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key"/>
 <text x="0" y="0" class="key tap">LSHIFT</text>
@@ -348,7 +346,7 @@ path.combo {
 <g transform="translate(742, 238)" class="key keypos-48">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
 <text x="0" y="0" class="key tap">0x89</text>
-<text x="0" y="10" class="key hold"><tspan style="font-size: 73%">RIGHT SHIFT</tspan></text>
+<text x="0" y="10" class="key hold"><tspan style="font-size: 89%">RIGHT GUI</tspan></text>
 </g>
 <g transform="translate(770, 238)" class="key keypos-49">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
@@ -780,9 +778,9 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(147, 224)" class="key keypos-37">
-<rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>
-<text x="0" y="0" class="key tap">LALT</text>
+<g transform="translate(147, 224)" class="key trans keypos-37">
+<rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(217, 224)" class="key keypos-38">
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>
