@@ -303,12 +303,12 @@
             // | touch1  | touch2  | touch3  | touch 4 |                                   | touch1   | touch2       | touch3  | touch 4 |
 
             bindings = <
-&kp TAB       &kp Q             &kp W          &kp E                  &kp R             &kp T                     &kp Y          &kp U                   &kp I     &kp O                       &kp P               &kp JP_TILDE
-&kp LCTRL     &kp A             &kp S          &kp D                  &kp F             &kp G                     &kp H          &jenter                 &kp K     &long_hold_mod_tap RCTRL L  &lt SCROLL_L MINUS  &lt SCROLL_L MINUS
-&kp LSHIFT    &kp Z             &kp X          &kp C                  &kp V             &kp B                     &kp JP_TILDE   &kp N                   &kp M     &mkp LCLK                   &mkp RCLK           &kp SLASH
-              &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt EXT1_L SPACE  &lt RIGHT_L INT_MUHENKAN  &kp BACKSPACE  &kp ENTER               &kp RALT  &mt RIGHT_SHIFT JP_YEN
-&out OUT_TOG  &out_bt_nxt                                                                                         &kp UP         &mt RIGHT_SHIFT JP_YEN  &kp DOWN  &kp RIGHT
-&none         &none             &none          &none                                                              &mo SCROLL_L   &none                   &none     &none
+&kp TAB       &kp Q             &kp W          &kp E                  &kp R             &kp T                     &kp Y          &kp U                 &kp I     &kp O                       &kp P               &kp JP_TILDE
+&kp LCTRL     &kp A             &kp S          &kp D                  &kp F             &kp G                     &kp H          &jenter               &kp K     &long_hold_mod_tap RCTRL L  &lt SCROLL_L MINUS  &kp MINUS
+&kp LSHIFT    &kp Z             &kp X          &kp C                  &kp V             &kp B                     &kp JP_TILDE   &kp N                 &kp M     &mkp LCLK                   &mkp RCLK           &kp SLASH
+              &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt EXT1_L SPACE  &lt RIGHT_L INT_MUHENKAN  &kp BACKSPACE  &kp ENTER             &kp RALT  &mt RIGHT_SHIFT JP_YEN
+&out OUT_TOG  &out_bt_nxt                                                                                         &kp UP         &mt RIGHT_GUI JP_YEN  &kp DOWN  &kp RIGHT
+&none         &none             &none          &none                                                              &mo SCROLL_L   &none                 &none     &none
             >;
         };
 
@@ -327,12 +327,12 @@
         mac_default_layer {
             display-name = "Mac Default";
             bindings = <
-&trans  &trans  &trans    &trans            &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans            &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans            &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &kp LALT  &lt 5 LANGUAGE_1  &trans  &lt 6 LANG2  &trans  &trans  &trans  &trans
-&trans  &trans                                                   &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans                                 &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &lt 5 LANGUAGE_1  &trans  &lt 6 LANG2  &trans  &trans  &trans  &trans
+&trans  &trans                                                 &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                                 &trans  &trans  &trans  &trans
             >;
         };
 
