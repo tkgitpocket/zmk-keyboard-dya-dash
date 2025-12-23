@@ -90,11 +90,6 @@
 
 &trackball_l { cpi = <600>; };
 
-&lt {
-    tapping-term-ms = <230>;
-    flavor = "balanced";
-};
-
 / {
     behaviors {
         // ctrl+h as backspace
