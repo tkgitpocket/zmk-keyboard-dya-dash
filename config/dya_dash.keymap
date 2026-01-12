@@ -84,7 +84,7 @@
 
 &zip_temp_layer { excluded-positions = <19 20 21 22 32 33 41 52 53 54 55 56 57 58 59>; };
 
-&trackball_r { cpi = <600>; };
+&trackball_r { cpi = <500>; };
 
 //&trackball_r { cpi = <800>; };
 
@@ -289,19 +289,19 @@
             display-name = "Base Layer";
 
             // --------------------------------------------------------------------------------------------------------------------------------------------------
-            // |   TAB   |    Q    |    W    |    E    |    R    |    T       |            |    Y        |    U    |    I     |    O    |    P    |    [    |
-            // |   CTRL  |    A    |    S    |    D    |    F    |    G       |            |    H        |    J    |    K     |    L    |    ;    |    '    |
-            // |  SHIFT  |    Z    |    X    |    C    |    V    |    B       |            |    B        |    N    |    M     |    ,    |    .    |    /    |
-            //           |  CONFIG |   WIN   |   ALT   |  SPACE  | LEFT_LAYER |            | RIGHT_LAYER |  SPACE  |   ALT    |   WIN   |
+            // |   TAB   |    Q    |    W    |    E       |    R    |    T        |            |    Y        |    U            |    I         |    O         |    P    |    ￥   |
+            // |   CTRL  |    A    |    S    |    D       |    F    |    G        |            |    H        |    J            |    K         |    L         |    ;    |    -    |
+            // |  SHIFT  |    Z    |    X    |    C       |    V    |    B        |            |    B        |    N            |    M         |    MB1       |    MB2  |    /    |
+            //           |  CONFIG |   WIN   | LEFT_LAYER |  SPACE  | RIGHT_LAYER |            | BACKSPACE   |  ENTER          |   未使用     |   未使用      |
             // --------------------------------------------------------------------------------------------------------------------------------------------------
-            // | BLE     |  USB    |                                                       |  up      | left(=右下)  | down    | right   |
-            // | touch1  | touch2  | touch3  | touch 4 |                                   | touch1   | touch2       | touch3  | touch 4 |
+            // | BLE     |  USB    |                                                       | 未使用       | (右下)mt GUI ￥ |  未使用      |   未使用      |
+            // | touch1  | touch2  | touch3  | touch 4 |                                   | touch1      | touch2          | touch3  | touch 4 |
 
             bindings = <
-&kp TAB       &kp Q             &kp W          &kp E                  &kp R             &kp T                     &kp Y          &kp U                 &kp I     &kp O                       &kp P               &kp JP_TILDE
-&kp LCTRL     &kp A             &kp S          &kp D                  &kp F             &kp G                     &kp H          &jenter               &kp K     &long_hold_mod_tap RCTRL L  &lt SCROLL_L MINUS  &kp MINUS
+&kp TAB       &kp Q             &kp W          &kp E                  &kp R             &kp T                     &kp Y          &kp U                 &kp I     &kp O                       &kp P               &kp JP_YEN
+&kp LCTRL     &kp A             &kp S          &kp D                  &kp F             &kp G                     &kp H          &jenter               &kp K     &long_hold_mod_tap RCTRL L  &lt SCROLL_L MINUS  &mo SCROLL_L
 &kp LSHIFT    &kp Z             &kp X          &kp C                  &kp V             &kp B                     &kp JP_TILDE   &kp N                 &kp M     &mkp LCLK                   &mkp RCLK           &kp SLASH
-              &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt EXT1_L SPACE  &lt RIGHT_L INT_MUHENKAN  &kp BACKSPACE  &kp ENTER             &kp RALT  &mt RIGHT_SHIFT JP_YEN
+              &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt EXT1_L SPACE  &lt RIGHT_L INT_MUHENKAN  &kp BACKSPACE  &kp ENTER             &none     &none
 &out OUT_TOG  &out_bt_nxt                                                                                         &kp UP         &mt RIGHT_GUI JP_YEN  &kp DOWN  &kp RIGHT
 &none         &none             &none          &none                                                              &mo SCROLL_L   &none                 &none     &none
             >;
