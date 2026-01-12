@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - +
+  - '0x89'
   - LCTRL
   - A
   - S
@@ -24,7 +24,7 @@ layers:
   - K
   - {t: L, h: RCTRL}
   - {t: '-', h: Trackball Scroll}
-  - '-'
+  - Trackball Scroll
   - LSHIFT
   - Z
   - X
@@ -44,8 +44,8 @@ layers:
   - {t: INT MUHENKAN, h: Right SPACE}
   - BACKSPACE
   - ENTER
-  - RALT
-  - {t: '0x89', h: RIGHT SHIFT}
+  - ''
+  - ''
   - OUT TOG
   - '&out_bt_nxt'
   - ↑
