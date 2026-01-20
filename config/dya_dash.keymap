@@ -437,12 +437,12 @@
         extra1 {
             display-name = "Center SPACE";
             bindings = <
-&trans          &kp TAB    &kp LEFT_ALT  &kp END    &lt EXT2_L SPACE  &kp PRINTSCREEN  &kp RC(Y)      &mkp MB4        &mkp MB3   &mkp MB5   &kp UP_ARROW  &kp PAGE_UP
-&trans          &kp HOME   &kp LC(S)     &kp DEL    &kp RIGHT_ARROW   &kp LEFT_SHIFT   &kp BACKSPACE  &mkp LCLK       &mkp LCLK  &mkp RCLK  &mo SCROLL_L  &kp PAGE_DOWN
-&kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)         &kp LEFT_ARROW   &kp PAGE_DOWN  &kp DOWN_ARROW  &trans     &mkp LCLK  &mkp RCLK     &kp ENTER
-                &trans     &trans        &trans     &trans            &trans           &kp RCTRL      &trans          &trans     &trans
-&trans          &trans                                                                 &trans         &trans          &trans     &trans
-&trans          &trans     &trans        &trans                                        &none          &none           &trans     &trans
+&trans          &kp TAB    &kp LEFT_ALT  &kp END    &lt EXT2_L SPACE  &kp PRINTSCREEN  &kp RC(Y)      &mkp MB4        &mkp MB3  &mkp MB5   &kp UP_ARROW  &kp PAGE_UP
+&trans          &kp HOME   &kp LC(S)     &kp DEL    &kp RIGHT_ARROW   &kp LEFT_SHIFT   &kp BACKSPACE  &none           &none     &mkp LCLK  &mkp RCLK     &kp PAGE_DOWN
+&kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)         &kp LEFT_ARROW   &kp PAGE_DOWN  &kp DOWN_ARROW  &trans    &mkp LCLK  &mkp RCLK     &kp ENTER
+                &trans     &trans        &trans     &trans            &trans           &kp RCTRL      &trans          &trans    &trans
+&trans          &trans                                                                 &trans         &trans          &trans    &trans
+&trans          &trans     &trans        &trans                                        &none          &none           &trans    &trans
             >;
         };
 
