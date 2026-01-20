@@ -686,10 +686,10 @@ layers:
   - RIGHT ARROW
   - LEFT SHIFT
   - BACKSPACE
-  - '&mkp LCLK'
+  - ''
+  - ''
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - Trackball Scroll
   - PAGE DOWN
   - LEFT SHIFT
   - Ctl+Z
