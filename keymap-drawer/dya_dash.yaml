@@ -506,10 +506,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ''
+  - ''
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - '&mkp RCLK'
-  - Trackball Scroll
   - RALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -518,8 +518,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MCLK'
-  - '&mkp LCLK'
+  - ''
+  - ''
   - '&mkp LCLK'
   - '&mkp RCLK'
   - {t: ▽, type: trans}
