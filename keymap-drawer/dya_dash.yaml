@@ -506,11 +506,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - ''
+  - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - RALT
+  - Trackball Scroll
+  - Trackball Scroll
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -518,8 +518,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp RCLK'
   - {t: ▽, type: trans}
@@ -566,11 +566,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&mkp LCLK'
-  - '&mkp RCLK'
   - '&mkp RCLK'
   - Trackball Scroll
-  - RALT
+  - Trackball Scroll
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -578,8 +578,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MCLK'
-  - '&mkp LCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp RCLK'
   - {t: ▽, type: trans}
