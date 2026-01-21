@@ -34,8 +34,8 @@ layers:
   - +
   - N
   - M
-  - '&mkp LCLK'
-  - '&mkp RCLK'
+  - ','
+  - .
   - /
   - {t: ESC, h: Config Layer}
   - {t: LWIN, h: LALT}
