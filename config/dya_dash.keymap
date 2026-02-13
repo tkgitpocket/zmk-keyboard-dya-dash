@@ -442,7 +442,6 @@
             >;
         };
 
-
         extra1 {
             display-name = "Extra";
             bindings = <
@@ -466,7 +465,5 @@
 &trans  &trans  &trans  &trans                  &trans     &trans     &trans     &trans
             >;
         };
-
-
     };
 };
