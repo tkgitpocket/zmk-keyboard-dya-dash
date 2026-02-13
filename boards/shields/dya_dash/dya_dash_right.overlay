@@ -2,7 +2,6 @@
 
 #include "dya_dash.dtsi"
 
-
 // The matrix transform for this board is 6 columns over because the left half is 5 columns wide according to the matrix.
 &default_transform {
     col-offset = <6>;
