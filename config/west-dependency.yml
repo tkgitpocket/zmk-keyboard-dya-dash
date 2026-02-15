@@ -6,8 +6,6 @@ manifest:
   remotes:
     - name: cormoran
       url-base: https://github.com/cormoran
-    - name: kot149
-      url-base: https://github.com/kot149
   projects:
     - name: zmk-west-commands
       import: true
@@ -24,8 +22,5 @@ manifest:
     - name: zmk-module-battery-history
     - name: zmk-module-runtime-input-processor
     - name: zmk-module-settings-rpc
-    - name: zmk-scroll-snap
-      remote: kot149
-      revision: v1
   self:
     path: config
