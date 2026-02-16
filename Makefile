@@ -9,8 +9,8 @@ build-left:
 	bash local_build.sh left
 build-right:
 	bash local_build.sh right
-#build-left-ball:
-#	bash local_build.sh left-ball
+build-left-ball:
+	bash local_build.sh left-ball
 build-right-ball:
 	bash local_build.sh right-ball
 

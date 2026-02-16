@@ -11,11 +11,11 @@ right)
     SPLIT=right
     WEST_ADDITIONAL_OPTS="${WEST_ADDITIONAL_OPTS} -S studio-rpc-usb-uart"
     ;;
-#left-ball)
-#    SPLIT=left
-#    WEST_ADDITIONAL_OPTS="${WEST_ADDITIONAL_OPTS} -S left-trackball"
-#    BUILD_DIR_SUFFIX="${BUILD_DIR_SUFFIX}_trackball"
-#    ;;
+left-ball)
+    SPLIT=left
+    WEST_ADDITIONAL_OPTS="${WEST_ADDITIONAL_OPTS} -S left-trackball"
+    BUILD_DIR_SUFFIX="${BUILD_DIR_SUFFIX}_trackball"
+    ;;
 right-ball)
     SPLIT=right
     WEST_ADDITIONAL_OPTS="${WEST_ADDITIONAL_OPTS} -S studio-rpc-usb-uart"
