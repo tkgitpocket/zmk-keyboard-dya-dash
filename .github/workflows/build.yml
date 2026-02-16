@@ -26,34 +26,27 @@ jobs:
         env:
           cache_name: cache-west-modules
         with:
-          path: dependencies/
-          key: ${{ runner.os }}-build-${{ env.cache_name }}-${{ hashFiles('config/west*.yml') }}
+          path: external/
+          key: ${{ runner.os }}-build-${{ env.cache_name }}-${{ hashFiles('**/west.yml') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache_name }}-
       - name: Init
         run: |
           git config --global --add safe.directory ${{ github.workspace }}
-          west init -l config --mf west-standalone.yml
-          west update --narrow
-          west zephyr-export
+          make init
       - name: Build
-        run: west zmk-build -d ./build -q
+        run: make build-all -j6
       - name: Copy artifacts
         shell: sh -x {0}
         run: |
-          mkdir -p artifacts
-          find ./build -type f -path '*/zephyr/zmk.uf2' \
-          | while read -r f; do
-              echo "Found: $f"
-              name=$(basename "$(dirname "$(dirname "$f")")")
-              mv "$f" "artifacts/${name}.uf2"
-            done
+          mkdir -p build/artifacts
+          cp -r build/*.uf2 build/artifacts/
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: dya-dash
-          path: artifacts
+          name: artifact-dya-dash
+          path: build/artifacts
   release:
     if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.release != '' }}
     needs: build
@@ -65,8 +58,8 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
-          name: dya-dash
-          path: artifacts
+          name: artifact-dya-dash
+          path: build
       - name: Create release
         run: |
           gh release create ${{ github.event.inputs.release }} \
@@ -74,6 +67,6 @@ jobs:
             --generate-notes \
             --latest \
             --target ${{ github.sha }} \
-            artifacts/*.uf2
+            build/*.uf2
         env:
           GH_TOKEN: ${{ github.token }}

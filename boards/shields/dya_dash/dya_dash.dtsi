@@ -1,17 +1,15 @@
 #include <behaviors/default_layer.dtsi>
 #include <behaviors/animation_trigger.dtsi>
+#include <dt-bindings/zmk/input_transform.h> // 縦のスクロール方向をWindowsに合わせるために
+#include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/input/input-event-codes.h>
 #include <dt-bindings/led/led.h>
 #include <dt-bindings/zmk_driver_animation/animation_control.h>
 #include <dt-bindings/zmk_driver_animation/animation_trigger.h>
+#include <input/processors.dtsi>
 #include <zmk_driver_animation/animation.dtsi>
 #include <zmk_driver_animation/animation_layer_status.dtsi>
-#include <behaviors/battery_history_request.dtsi>
 
-#include <input/processors.dtsi>
-#include <input/processors/runtime-input-processor.dtsi>
-#include <dt-bindings/zmk/matrix_transform.h>
-#include <dt-bindings/zmk/runtime_input_processor.h>
 #include "dya_dash-layouts.dtsi"
 
 / {
@@ -137,13 +135,26 @@
     trackball_listener: trackball_listener_0 {
         compatible = "zmk,input-listener";
         status = "disabled";
-		input-processors = <&mouse_runtime_input_processor &scroll_runtime_input_processor>;
+        // input-processors = <&zip_temp_layer 8 500>;
+        trackball_scroller: scroller_0 {
+            // layers = <9>;
+            // 縦のスクロール方向をWindowsに合わせるために
+            input-processors = <
+                &zip_xy_scaler 1 50
+                &zip_xy_to_scroll_mapper
+                &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
+            >;
+        };
     };
     // Enabled by default to support trackball on peripheral side.
     trackball_listener_l: trackball_listener_1 {
         compatible = "zmk,input-listener";
         device = <&peripheral_trackball>;
-		input-processors = <&mouse_runtime_input_processor_l &scroll_runtime_input_processor_l>;
+        // input-processors = <&zip_temp_layer 8 500>;
+        trackball_scroller_l: scroller_1 {
+            // layers = <9>;
+            input-processors = <&zip_xy_scaler 1 50 &zip_xy_to_scroll_mapper>;
+        };
     };
 
     split_inputs {
@@ -155,68 +166,6 @@
             reg = <0>;
         };
     };
-	
-	mouse_runtime_input_processor_l: mouse_runtime_input_processor_l {
-		compatible = "zmk,input-processor-runtime";
-		processor-label = "left";
-		temp-layer-enabled;
-		type = <INPUT_EV_REL>;
-		x-codes = <INPUT_REL_X>;
-		y-codes = <INPUT_REL_Y>;
-		track-remainders;
-		
-		temp-layer-transparent-behavior = <&trans>;
-		temp-layer-kp-behavior = <&kp>;
-		temp-layer-keep-keycodes = <LEFT_CONTROL LEFT_SHIFT LEFT_ALT LEFT_GUI RIGHT_CONTROL RIGHT_SHIFT RIGHT_ALT RIGHT_GUI>;
-		
-		temp-layer-enabled;
-		// temp-layer = <8>;
-		
-		#input-processor-cells = <0>;
-	};
-	
-	scroll_runtime_input_processor_l: scroll_runtime_input_processor_l {
-		compatible = "zmk,input-processor-runtime";
-		processor-label = "lscroll";
-		type = <INPUT_EV_REL>;
-		// Instead of consuming REL_WHEEL, process REL_X, REL_Y and convert to scroll events
-		x-codes = <INPUT_REL_X>;
-		y-codes = <INPUT_REL_Y>;
-		xy-to-scroll-enabled;
-		track-remainders;
-		
-		scale-divisor = <60>;
-		// active layers = <BIT(9)>;
-		
-		temp-layer-transparent-behavior = <&trans>;
-		temp-layer-kp-behavior = <&kp>;
-		temp-layer-keep-keycodes = <LEFT_CONTROL LEFT_SHIFT LEFT_ALT LEFT_GUI RIGHT_CONTROL RIGHT_SHIFT RIGHT_ALT RIGHT_GUI>;
-		
-		axis-snap-mode = <AXIS_SNAP_MODE_Y>;
-		axis-snap-threshold = <200>;
-		
-		#input-processor-cells = <0>;
-	};
-};
-
-&mouse_runtime_input_processor {
-	processor-label = "right";
-	temp-layer-enabled;
-	// temp-layer = <8>;
-};
-
-&scroll_runtime_input_processor {
-	processor-label = "rscroll";
-	
-	// Instead of consuming REL_WHEEL, process REL_X, REL_Y and convert to scroll events
-	x-codes = <INPUT_REL_X>;
-	y-codes = <INPUT_REL_Y>;
-	xy-to-scroll-enabled;
-	
-	axis-snap-mode = <AXIS_SNAP_MODE_Y>;
-	axis-snap-threshold = <200>;
-	
-	xy-to-scroll-enabled;
 };
 
 // Use NFC pins as GPIOs
