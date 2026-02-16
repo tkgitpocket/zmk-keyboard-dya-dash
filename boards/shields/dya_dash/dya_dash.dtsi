@@ -1,6 +1,6 @@
 #include <behaviors/default_layer.dtsi>
 #include <behaviors/animation_trigger.dtsi>
-#include <dt-bindings/zmk/input_transform.h> // 縦のスクロール方向をWindowsに合わせるために
+#include <dt-bindings/zmk/input_transform.h> // 邵ｦ縺ｮ繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ譁ｹ蜷代ｒWindows縺ｫ蜷医ｏ縺帙ｋ縺溘ａ縺ｫ
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/input/input-event-codes.h>
 #include <dt-bindings/led/led.h>
@@ -138,7 +138,7 @@
         // input-processors = <&zip_temp_layer 8 500>;
         trackball_scroller: scroller_0 {
             // layers = <9>;
-            // 縦のスクロール方向をWindowsに合わせるために
+            // 邵ｦ縺ｮ繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ譁ｹ蜷代ｒWindows縺ｫ蜷医ｏ縺帙ｋ縺溘ａ縺ｫ
             input-processors = <
                 &zip_xy_scaler 1 50
                 &zip_xy_to_scroll_mapper
