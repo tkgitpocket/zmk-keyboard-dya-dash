@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: dya_dash}
 layers:
   Base Layer:
-  - TAB
+  - ESC
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '0x89'
-  - LCTRL
+  - {t: TAB, h: LCTRL}
   - A
   - S
   - D
@@ -24,7 +24,7 @@ layers:
   - K
   - {t: L, h: RCTRL}
   - {t: '-', h: Trackball Scroll}
-  - Trackball Scroll
+  - Sft+0x87
   - LSHIFT
   - Z
   - X
@@ -301,7 +301,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Left SPACE:
-  - '!'
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -312,7 +312,7 @@ layers:
   - '*'
   - (
   - Sft+0x89
-  - ']'
+  - INT1
   - {t: ▽, type: trans}
   - LCTRL
   - ;
@@ -324,14 +324,14 @@ layers:
   - ']'
   - \
   - _
-  - \
+  - _
   - {t: ▽, type: trans}
   - {t: TAB, h: LEFT SHIFT}
   - ':'
   - '"'
   - +
   - PRINTSCREEN
-  - ':'
+  - '='
   - ;
   - ''''
   - <
@@ -384,7 +384,7 @@ layers:
   - F8
   - F9
   - Sft+0x87
-  - {t: ▽, type: trans}
+  - '&LS(0x87)'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
