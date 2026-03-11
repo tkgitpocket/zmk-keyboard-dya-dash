@@ -299,12 +299,12 @@
             // | touch1  | touch2  | touch3  | touch 4 |                                   | touch1      | touch2          | touch3  | touch 4 |
 
             bindings = <
-&kp TAB       &kp Q             &kp W          &kp E                  &kp R                &kp T                     &kp Y          &kp U                 &kp I     &kp O                       &kp P               &kp JP_YEN
-&kp LCTRL     &kp A             &kp S          &kp D                  &kp F                &kp G                     &kp H          &jenter               &kp K     &long_hold_mod_tap RCTRL L  &lt SCROLL_L MINUS  &mo SCROLL_L
+&kp ESC       &kp Q             &kp W          &kp E                  &kp R                &kp T                     &kp Y          &kp U                 &kp I     &kp O                       &kp P               &kp JP_YEN
+&mt LCTRL TAB &kp A             &kp S          &kp D                  &kp F                &kp G                     &kp H          &jenter               &kp K     &long_hold_mod_tap RCTRL L  &lt SCROLL_L MINUS  &kp JP_UNDERSCORE
 &kp LSHIFT    &kp Z             &kp X          &kp C                  &kp V                &kp B                     &kp JP_TILDE   &kp N                 &kp M     &mkp LCLK                   &mkp RCLK           &kp SLASH
-              &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt CENTER_L SPACE  &lt RIGHT_L INT_MUHENKAN  &kp BACKSPACE  &kp ENTER             &none     &none
-&out OUT_TOG  &out_bt_nxt                                                                                         &kp UP         &mt RIGHT_GUI JP_YEN  &kp DOWN  &kp RIGHT
-&none         &none             &none          &none                                                              &mo SCROLL_L   &none                 &none     &none
+              &lt CONFIG_L ESC  &mt LALT LWIN  &lt LEFT_L INT_HENKAN  &lt CENTER_L SPACE  &lt RIGHT_L INT_MUHENKAN   &kp BACKSPACE  &kp ENTER             &none     &none
+&out OUT_TOG  &out_bt_nxt                                                                                            &kp UP         &mt RIGHT_GUI JP_YEN  &kp DOWN  &kp RIGHT
+&none         &none             &none          &none                                                                 &mo SCROLL_L   &none                 &none     &none
             >;
         };
 
@@ -360,15 +360,14 @@
             display-name = "Left SPACE";
 
             // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-            // |  ESC    |  !  |  @  |  #       |  $  |  %       |                           |  ^  |  &      |  *      |  (  |  )  |  ]  |
-            // |         |  1  |  2  |  3       |  4  |  5       |                           |  6  |  7      |  8      |  9  |  0  |  \  |
+            // |  ESC    |  !  |  @  |  #       |  $  |  %       |                           |  ^  |  &      |  *      |  (  |  )  |  \  |
             // |         |     |     |          |     |          |                           |  `  |  -      |  =      |  [  |  ]  |SHIFT|
             //           |     |     |          |     |          |                           |     |         |         |     |
 
             bindings = <
-&kp EXCL  &kp EXCLAMATION     &kp JP_DQUOTE  &kp HASH         &kp DOLLAR     &kp PERCENT      &kp JP_AMPERSAND  &kp JP_QUOTE   &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE       &kp RBKT
-&trans    &kp LCTRL           &kp SEMICOLON  &kp JP_COLON     &kp JP_LBRACE  &kp JP_RBRACE    &kp JP_CARET      &kp JP_AT      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_EQUAL      &kp BACKSLASH
-&trans    &mt LEFT_SHIFT TAB  &kp JP_PLUS    &kp JP_ASTERISK  &kp JP_TILDE   &kp PRINTSCREEN  &kp JP_PLUS       &kp SEMICOLON  &kp JP_COLON     &kp LESS_THAN    &kp GREATER_THAN  &kp JP_TILDE
+&trans    &kp EXCLAMATION     &kp JP_DQUOTE  &kp HASH         &kp DOLLAR     &kp PERCENT      &kp JP_AMPERSAND  &kp JP_QUOTE   &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE       &kp JP_BSLH
+&trans    &kp LCTRL           &kp SEMICOLON  &kp JP_COLON     &kp JP_LBRACE  &kp JP_RBRACE    &kp JP_CARET      &kp JP_AT      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_EQUAL      &kp JP_EQUAL
+&trans    &mt LEFT_SHIFT TAB  &kp JP_PLUS    &kp JP_ASTERISK  &kp JP_TILDE   &kp PRINTSCREEN  &kp JP_CARET      &kp SEMICOLON  &kp JP_COLON     &kp LESS_THAN    &kp GREATER_THAN  &kp JP_TILDE
           &trans              &trans         &trans           &trans         &trans           &kp LCTRL         &kp ENTER      &trans           &trans
 &trans    &trans                                                                              &trans            &kp QUESTION   &trans           &trans
 &trans    &trans              &trans         &trans                                           &trans            &trans         &trans           &trans
@@ -379,7 +378,7 @@
             display-name = "Right SPACE";
             bindings = <
 &kp NUMBER_1  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0       &kp N0
-&trans        &none         &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &kp F7        &kp F8           &kp F9        &kp JP_UNDERSCORE  &trans
+&trans        &none         &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &kp F7        &kp F8           &kp F9        &kp JP_UNDERSCORE  &JP_UNDERSCORE
 &trans        &trans        &trans        &trans        &trans        &trans        &kp JP_BACKQUOTE  &kp JP_PLUS   &kp JP_ASTERISK  &kp COMMA     &kp PERIOD         &kp SLASH
               &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans           &trans
 &trans        &trans                                                                &trans            &kp QUESTION  &trans           &trans
