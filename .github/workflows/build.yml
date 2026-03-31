@@ -35,7 +35,9 @@ jobs:
           git config --global --add safe.directory ${{ github.workspace }}
           make init
       - name: Build
-        run: make build-all -j6
+        run: |
+          git config --global --add safe.directory ${{ github.workspace }}
+          make build-all -j6
       - name: Copy artifacts
         shell: sh -x {0}
         run: |
