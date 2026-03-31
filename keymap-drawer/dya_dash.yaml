@@ -20,7 +20,7 @@ layers:
   - F
   - G
   - H
-  - {t: J, s: ENTER}
+  - J
   - K
   - {t: L, h: RCTRL}
   - {t: '-', h: Trackball Scroll}
@@ -36,9 +36,9 @@ layers:
   - M
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - /
+  - {t: /, h: RIGHT SHIFT}
   - {t: ESC, h: Config Layer}
-  - {t: LWIN, h: LALT}
+  - {t: LEFT GUI, h: LALT}
   - {t: INT HENKAN, h: Left SPACE}
   - {t: SPACE, h: Center SPACE}
   - {t: INT MUHENKAN, h: Right SPACE}
@@ -877,7 +877,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+AltGr+DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -931,3 +931,9 @@ combos:
   k: ''''
 - p: [15, 16]
   k: {t: Sft+TAB, h: toggle}
+- p: [1, 2]
+  k: {t: ESC, h: toggle}
+- p: [13, 14]
+  k: LCTRL
+- p: [14, 15]
+  k: TAB
