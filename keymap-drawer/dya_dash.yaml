@@ -384,7 +384,7 @@ layers:
   - F8
   - F9
   - Sft+0x87
-  - '&LS(0x87)'
+  - Sft+0x87
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
